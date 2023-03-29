@@ -1,8 +1,7 @@
 <template>
     <div class="layout-wrapper" :class="containerClass">
-        <app-news v-if="$appState.newsActive" />
         <app-topbar @menubutton-click="onMenuButtonClick" @configbutton-click="onConfigButtonClick" />
-        <app-menu :active="sidebarActive" />
+
         <app-configurator v-model="appConfigActive" />
         <div :class="['layout-mask', { 'layout-mask-active': sidebarActive }]" @click="onMaskClick"></div>
         <div class="layout-content">

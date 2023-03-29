@@ -12,12 +12,11 @@
             <Dropdown />
         </div>
         <div class="product-list-body">
-            <cardProduct />
-            <cardProduct />
-            <cardProduct />
-            <cardProduct />
-            <cardProduct />
-            <cardProduct />
+            <div class="grid">
+                <div class="col"><cardProduct /></div>
+                <div class="col"><cardProduct /></div>
+                <div class="col"><cardProduct /></div>
+            </div>
         </div>
     </div>
 </template>
